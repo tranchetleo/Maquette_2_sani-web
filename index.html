@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Template de site web pour une entreprise. Le site est responsive, ergonomique et est optimisé pour le référencement. Exemple d'une Consultante immobilier.">
+    <title>Jane Doe - Consultante immobilier</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <!-- Liens vers les fichiers CSS et JavaScript -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul style="transform: scale(1.2);">
+                <li><a href="index.html" style="font-weight: 600;">Jane Doe</a></li>
+            </ul>
+            <ul class="navigation">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil">
+            <h1>Jane Doe</h1>
+            <p>Consultante immobilier à votre service</p>
+
+            <img src="images/image_accueil.webp" alt="image_accueil">
+        </section>
+
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio nec nunc tincidunt tincidunt. Donec auctor, nunc nec
+                fermentum aliquam, nunc odio tincidunt nunc, nec tincidunt odio nunc nec odio. Nulla nec odio nec nunc tincidunt.
+            </p>
+
+            <a href="about.html">En savoir plus</a>
+        </section>
+
+        <div class="slider">
+            <!-- Slider avec 3 images, des points pour indiquer la position de l'image et un texte pour chaque image -->
+            <div class="slides">
+                <div id="radios">
+                    <!--Les radios ne sont pas cliquables, ils servent juste à indiquer la position de l'image-->
+                    <input type="radio" class="dot" checked>
+                    <input type="radio" class="dot">
+                    <input type="radio" class="dot">
+                </div>
+                <div class="slide show">
+                    <img src="images/slider1.webp" alt="slider1">
+                    <p>Vivez</p>
+                    <h2>Votre passion</h2>
+                </div>
+                <div class="slide">
+                    <img src="images/slider2.webp" alt="slider2">
+                    <p>Suivez</p>
+                    <h2>Vos envies</h2>
+                </div>
+                <div class="slide">
+                    <img src="images/slider3.webp" alt="slider3">
+                    <p>Constuisez</p>
+                    <h2>Votre avenir</h2>
+                </div>
+            </div>
+        </div>
+
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services">
+                <div>
+                    <img src="images/service1.webp" alt="service1">
+                    <h3>Plan d'investissement</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio nec nunc tincidunt tincidunt. Donec auctor, nunc
+                        nec
+                        fermentum aliquam, nunc odio tincidunt nunc, nec tincidunt odio nunc nec odio.</p>
+                </div>
+                <div>
+                    <img src="images/service2.webp" alt="service2">
+                    <h3>Orientation immobilière</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio nec nunc tincidunt tincidunt. Donec auctor, nunc
+                        nec
+                        fermentum aliquam, nunc odio tincidunt nunc, nec tincidunt odio nunc nec odio.</p>
+                </div>
+                <div>
+                    <img src="images/service3.webp" alt="service3">
+                    <h3>Évaluation de la taxe foncière</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio nec nunc tincidunt tincidunt. Donec auctor, nunc
+                        nec
+                        fermentum aliquam, nunc odio tincidunt nunc, nec tincidunt odio nunc nec odio.</p>
+                </div>
+            </div>
+
+            <a href="services.html">En savoir plus</a>
+        </section>
+
+        <section id="temoignages">
+            <h2>Témoignages</h2>
+            <div class="temoignages">
+                <div class="row">
+                    <img src="images/temoignage1.webp" alt="temoignage1">
+                    <div>
+                        <h3>Client 1</h3>
+                        <div class="rating">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9734;</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio nec nunc tincidunt tincidunt. Donec auctor, nunc
+                            nec.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="images/temoignage2.webp" alt="temoignage2">
+                    <div>
+                        <h3>Client 2</h3>
+                        <div class="rating">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio nec nunc tincidunt tincidunt. Donec auctor, nunc
+                            nec fermentum aliquam, nunc odio tincidunt nunc, nec tincidunt odio nunc nec odio.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="images/temoignage3.webp" alt="temoignage3">
+                    <div>
+                        <h3>Client 3</h3>
+                        <div class="rating">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9734;</span>
+                            <span>&#9734;</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio nec nunc tincidunt tincidunt. Donec auctor, nunc
+                            nec fermentum aliquam, nunc odio tincidunt nunc, nec tincidunt odio nunc nec odio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: Janedoe@gmail.com</p>
+            <p>Téléphone: 06 12 34 56 78</p>
+            <form action="contact.php" method="post">
+                <div class="row">
+                    <input type="text" name="nom" placeholder="Nom*" required>
+                    <input type="text" name="prenom" placeholder="Prénom*" required>    
+                </div>
+                <input type="email" name="email" placeholder="Email*" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 &copy; <a href="index.html">Jane Doe</a> | tous droits réservés</p>
+        <p>Une création <a href="https://www.sani-web.com">Sani-web</a></p>
+    </footer>
+</body>
+</html>
